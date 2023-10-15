@@ -25,7 +25,6 @@
     "typescript": "^5.2.2"
   },
   "lint-staged": {
-    "*.ts": "prettier --write 'src/**/*.{js,ts}' --config .prettierrc.json",
-    "*.json": "prettier --write --config .prettierrc.json"
+    "*.ts": "prettier --write 'src/**/*.{js,ts}' --config .prettierrc.json"
   }
 }
