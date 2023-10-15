@@ -1,0 +1,31 @@
+{
+  "name": "0x26b-backend-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "prepare": "husky install",
+    "prebuild": "tsc --build --clean",
+    "build": "tsc",
+    "preformat": "npm run build",
+    "format": "prettier --write 'src/**/*.{js,ts}' --config .prettierrc.json",
+    "prestart": "npm run format",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.19",
+    "@types/node": "^20.8.6",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.1",
+    "prettier": "3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "lint-staged": {
+    "*.ts": "prettier --write 'src/**/*.{js,ts}' --config .prettierrc.json",
+    "*.json": "prettier --write --config .prettierrc.json"
+  }
+}
