@@ -10,8 +10,8 @@
     "build": "tsc",
     "preformat": "npm run build",
     "format": "prettier --write 'src/**/*.{js,ts}' --config .prettierrc.json",
-    "prestart": "npm run format",
-    "start": "node dist/index.js",
+    "predevelopment": "npm run format",
+    "development": "node dist/index.js",
     "production": "node dist/index.js"
   },
   "keywords": [],
