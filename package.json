@@ -11,7 +11,7 @@
     "preformat": "npm run build",
     "format": "prettier --write 'src/**/*.{js,ts}' --config .prettierrc.json",
     "predevelopment": "npm run format",
-    "development": "node dist/index.js",
+    "development": "nodemon dist/index.js",
     "production": "node dist/index.js"
   },
   "keywords": [],
@@ -22,6 +22,7 @@
     "@types/node": "^20.8.6",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.1",
+    "nodemon": "^3.0.1",
     "prettier": "3.0.3",
     "typescript": "^5.2.2"
   },
