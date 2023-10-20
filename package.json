@@ -8,11 +8,10 @@
     "prepare": "husky install",
     "prebuild": "tsc --build --clean",
     "build": "tsc",
-    "preformat": "npm run build",
     "format": "prettier --write 'src/**/*.{js,ts}' --config .prettierrc.json",
-    "predevelopment": "npm run format",
-    "development": "nodemon dist/index.js",
-    "production": "node dist/index.js"
+    "predev": "npm run format",
+    "dev": "nodemon --exec ts-node-esm ./src/index.ts",
+    "prod": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +23,7 @@
     "lint-staged": "^15.0.1",
     "nodemon": "^3.0.1",
     "prettier": "3.0.3",
+    "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
   "lint-staged": {
